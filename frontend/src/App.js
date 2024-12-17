@@ -8,6 +8,7 @@ import Profile from './components/Profile';
 import Discovery from './components/Discovery';
 import Matchmaking from './components/Matchmaking';
 import Notifications from './components/Notifications';
+import Dashboard from './components/Dashboard'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/discovery" element={<Discovery />} />
         <Route path="/matchmaking" element={<Matchmaking />} />
         <Route path="/notifications" element={<Notifications />} />
+        <Route path="/dash" element={<Dashboard />} />
       </Routes>
     </Router>
   );

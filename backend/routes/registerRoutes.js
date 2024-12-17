@@ -19,7 +19,7 @@ router.post('/', (req, res) => {
 
                let token = generateToken(user);
                res.cookie("token", token);
-               res.send("You have been SignUp");
+               res.send({token});
           })
       })
     } catch (err) {
